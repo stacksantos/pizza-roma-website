@@ -19,28 +19,46 @@ nav em {
 /* -------------------------------------------------------------------------- */
 /*                                HERO SECTION                                */
 /* -------------------------------------------------------------------------- */
-.heroTitle {
-  display: inline-block;
-  height: 72vh;
+.heroContainer {
+  background-image: url(https://images.unsplash.com/photo-1533777419517-3e4017e2e15a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-size: cover;
+  background-position: center;
+  ba
 }
+.heroTitle {
+  height: 80vh;
+  z-index: -2;
+  margin-top: 3rem;
+}
+
 .heroTitle h1 {
   font-family: var(--lobster);
-  font-size: 11rem;
+  font-size: 15rem;
   color: rgb(228, 0, 0);
   text-shadow: 12px 12px 3px rgb(0, 0, 0);
   margin-bottom: 2rem;
+  z-index: 0;
 }
 .heroTitle h1 img {
   position: absolute;
-  transform: translate(-10rem, -4.5rem);
-  width: 22rem;
+  transform: translate(-10rem, -3.5rem);
+  width: 24rem;
   z-index: -1;
 }
 .heroTitle h3,
 .heroTitle strong {
-  font-family: var(--secondFont);
-  font-size: 1.7rem;
-  margin-bottom: 1rem;
+  font-family: var(--fira);
+  font-size: 2.7rem;
+  margin-bottom: 2rem;
+  color: white;
+  border-radius: 25px;
+  padding: 7px 15px;
+}
+.heroTitle strong {
+  background-color: rgba(0, 0, 0, 0.644);
+}
+.heroTitle img {
+  background-size: cover;
 }
 .pizzaDivider {
   width: 100%;
@@ -50,29 +68,33 @@ nav em {
 }
 .hoursOpen h4,
 .hoursOpen a {
-  font-size: 1.6rem;
+  font-size: 2.6rem;
   min-width: max-content;
-  font-family: var(--mainFont);
+  font-family: var(--mont);
   margin-bottom: 2rem;
+  color: white;
 }
 #fullHours {
-  color: rgb(255, 136, 0);
   margin-left: 1rem;
 }
 #fullHours a {
-  color: rgb(255, 136, 0);
+  color: rgb(124, 255, 200);
+  background-color: rgba(0, 0, 0, 0.466);
+  padding: 7px 15px;
+  border-radius: 20px;
+  text-decoration: none;
 }
 #fullHours a:hover {
-  color: rgb(219, 17, 17);
+  color: rgb(255, 238, 0);
 }
-.viewMenuContainer {
-  padding-bottom: 5rem;
-}
-.viewMenu {
-  font-family: var(--secondFont);
-  font-size: 2rem;
+.btnContainer {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
 }
 
+.arrowContainer {
+  transform: translate(0px, 120px);
+}
 /* -------------------------------------------------------------------------- */
 /*                               CONTENT SECTION                              */
 /* -------------------------------------------------------------------------- */
@@ -80,6 +102,7 @@ nav em {
 .contentSection {
   height: 100vh;
   width: 100%;
+  background-color: rgb(255, 255, 255);
 }
 .menuSection {
     background-color: white;
@@ -92,7 +115,9 @@ nav em {
     font-family: var(--lobster);
     border-bottom: 1px solid black;
 }
-
+.waveDivider1 {
+  transform: translate(0,4px)
+}
 /* -------------------------------------------------------------------------- */
 /*                                    MEDIA                                   */
 /* -------------------------------------------------------------------------- */
