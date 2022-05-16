@@ -6,61 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" class="css" />
     <link rel="stylesheet" href="./css/custom.css" class="css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200;300;400;500;600;700;800;900&family=Lobster&family=Montserrat:wght@200;300;400;500;700;800;900&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Mono:ital,wght@0,100;0,400;0,500;1,200&display=swap"
-      rel="stylesheet"
-    />
     <title>Pizza Roma</title>
   </head>
+
   <body>
-    <header class="center">
-      <nav class="center">
+    <header class="row center">
+      <img src="./images/pizza roma logo.png" alt="" />
+      <nav class="align">
         <ul class="row">
+          <li><a href="#">Home</a></li>
+          <li><a href="#pizza">Pizza</a></li>
           <li>
-            Call to order: <em style="color: rgb(255, 208, 0)">401-307-5710</em>
+            <a href="#deals"><span id="dealsNav">Deals</span></a>
           </li>
+          <li><a href="https://slicelife.com/restaurants/ri/providence/02908/pizza-roma-providence/menu" target="_none">ORDER ONLINE</a></li>
         </ul>
       </nav>
     </header>
 
-    <section class="heroContainer">
-      <div class="pizzaDivider"></div>
-      <section class="heroTitle center col">
-        <h1>Pizza Roma <img src="./images/Pizza_Flatline.svg" alt="" /></h1>
-        <div class="heading-line"></div>
-        <h3>
-          Come eat at
-          <strong style="color: rgb(255, 253, 138)"
-            >1092 Chalkstone Ave, Providence, RI 02908</strong
-          >
-        </h3>
-        <div class="hoursOpen row">
-          <h4 id="open">Open until 11:30pm</h4>
-          <h4 id="fullHours">- <a href="*">Full Hours</a></h4>
-        </div>
-        <div class="btnContainer">
-          <button class="btn-pill-slide">Order Online</button>
-        </div>
+    <section class="heroSection" id="home">
+      <span class="heroHeader center"><img src="./images/WELCOME TO PIZZA ROMA.png" alt=""></span>
+      <div class="aboutContainer center">
+      <div class="heroAbout col">
+        <h3>You've just found your new favorite Pizza place!</h3>
+        <br>
+        
+        <h4>
+        There's a reason why everyone loves our pizza.<br/> 
+        We use FRESH ingredients, and truly LOVE what we do!!</h4>
+        <br/>
+        <br/> 
+        <p>
+        See what all the fuss is about with some of our local favorites.<br/>
+        Build your own, or try one our carefully crafted gourmet Pizza's!<br/>
+        <br/>
+        And don't miss out on refreshments while ordering!<br/>
+        We keep our fridge fully stocked so you'll never go thirsty.<br/> 
+        <br/>
+        <strong>We've been a Slice partner for 4 years.</strong><br/> 
+        <br/>
+        Make takeout easy with curbside pickup, or have it delivered to your home.<br/>
+        And don't forget to take adavantage of our <a href="#deals">DAILY DEALS</a>!
+        <br/>
+        <br/>
+       <span>We accept credit cards.</span>
+      </p>
+    </div>
+  </div>
       </section>
-      <div class="arrowContainer">
-        <span class="arrow"></span>
+      <div id="pizza"></div>
+    <section class="menuContainer" >
+    <section class="menu align col" >
+      <img src="./images/Pizza Roma Pizza Menu.png" alt="">
+       <section class="specials" id="deals">
+      <section class="specialsContainer row center">
+      <div class="deal1 center">
+        <img src="./images/TWO.png" alt="">
       </div>
-
-      <section class="waveDivider1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#FFF"
-            fill-opacity="1"
-            d="M 0,400 C 0,400 0,200 0,200 C 142,176 284,152 434,160 C 584,168 742,208 911,220 C 1080,232 1260,216 1440,200 C 1440,200 1440,400 1440,400 Z"
-          ></path>
-        </svg>
+      <div class="deal2 center">
+        <img src="./images/large.png" alt="">
+      </div>
       </section>
     </section>
-
-    <section class="contentSection col center">
-      <section class="menuSection col">
-        <h2 class="justify">Menu</h2>
-      </section>
+    <img src="./images/Pizza Menu cont..png" alt="">
     </section>
+    
+  </section>
+
+      
+    </div>
   </body>
 </html>
